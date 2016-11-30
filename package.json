@@ -1,0 +1,31 @@
+{
+  "name": "firebase-connect",
+  "version": "0.1.0",
+  "description": "## observer",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryohey/firebase-connect.git"
+  },
+  "author": "ryohey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryohey/firebase-connect/issues"
+  },
+  "homepage": "https://github.com/ryohey/firebase-connect#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "mocha": "^3.2.0",
+    "react": "^15.4.1",
+    "react-addons-test-utils": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "dependencies": {
+    "firebase": "^3.6.2"
+  }
+}

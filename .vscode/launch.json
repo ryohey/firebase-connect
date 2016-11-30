@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "プログラムの起動",
+            "program": "${workspaceRoot}/app.js",
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "プロセスに添付",
+            "port": 5858
+        },
+		{
+			"name": "mocha",
+			"type": "node",
+			"program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+			"stopOnEntry": false,
+			"args": ["--compilers", "js:babel-register", "${file}"],
+			"cwd": "${workspaceRoot}",
+			"runtimeExecutable": null,
+			"runtimeArgs": [
+				"--nolazy"
+			],
+        	"sourceMaps": true,
+			"env": { "NODE_ENV": "development"}
+		},
+		{
+			"name": "node",
+			"type": "node",
+			"stopOnEntry": false,
+			"args": ["${file}"],
+			"cwd": "${workspaceRoot}",
+			"runtimeExecutable": null,
+			"env": { "NODE_ENV": "development"}
+		}
+    ]
+}
